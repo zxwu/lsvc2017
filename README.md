@@ -3,7 +3,6 @@ Welcome to join the  the Large-Scale Video Classification Challenge workshop in 
 This toolkit contains metadata of this dataset and a python script to compute the mean Average Precision across all
 500 categories. Details are listed below. 
 
-==========================================
 Metadata
 ==========================================
 1. lsvc_train.txt, contains the ids of training videos and their corresponding labels. 
@@ -12,7 +11,6 @@ Metadata
 4. lsvc_class_index.txt, contains the class indices for 500 categories. 
 
 
-==========================================
 Features
 ==========================================
 We provide pre-extracted CNN features based on the fc6 layer of a VGG19 model pretrained on the full ImageNet data. A 
@@ -25,7 +23,6 @@ frame_features = numpy.fromfile('lsvcxxxxxx_fc6_vgg19_frame.binary', dtype='floa
 You will then get a 2D matrix whose size is N*4096, where N is the number of frames for this video and the i-th row of
 this matrix corresponds to the i-th frame of the video.
 
-==========================================
 Code to compute mean average precision
 ==========================================
 Example usage:
